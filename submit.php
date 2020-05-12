@@ -1,5 +1,6 @@
 <?php
 $firstname = filter_input(INPUT_POST, 'firstname');
+$lastname = filter_input(INPUT_POST, 'lastname');
 $birthyear = filter_input(INPUT_POST, 'birthday');
 $guessage = date('Y') - $birthyear;
 ?>
@@ -14,6 +15,7 @@ $guessage = date('Y') - $birthyear;
     <p> Formulář byl odeslán </p>
     <ul>
       <li> Name: <?= $firstname ?> </li>
+      <li> Surname: <?= $lastname ?> </li>
       <li> Birthday: <?= $birthyear ?> </li>
       <li> Age: <?= $guessage ?> </li>
     </ul>
