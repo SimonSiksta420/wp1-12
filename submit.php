@@ -1,6 +1,10 @@
 <?php
 $firstname = filter_input(INPUT_POST, 'firstname');
 $lastname = filter_input(INPUT_POST, 'lastname');
+$school = filter_input(INPUT_POST, 'school');
+$class = filter_input(INPUT_POST, 'class')
+$hobbies = filter_input(INPUT_POST, 'hobbies');
+$textarea = filter_input(INPUT_POST, 'description');
 $birthyear = filter_input(INPUT_POST, 'birthday');
 $guessage = date('Y') - $birthyear;
 ?>
@@ -16,8 +20,12 @@ $guessage = date('Y') - $birthyear;
     <ul>
       <li> Name: <?= $firstname ?> </li>
       <li> Surname: <?= $lastname ?> </li>
+      <li> School: <?= $school ?> </li>
+      <li> Class: <?= $class ?> </li>
+      <li> Hobbies <?= $hobbies ?> </li>
       <li> Birthday: <?= $birthyear ?> </li>
       <li> Age: <?= $guessage ?> </li>
+      <li> description: <?= $textarea ?>
     </ul>
 </body>
 </html>
