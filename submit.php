@@ -1,6 +1,6 @@
 <?php
 $firstname = filter_input(INPUT_POST, 'firstname');
-$birthyear = 1988;
+$birthyear = filter_input(INPUT_POST, 'birthday');
 $guessage = date('Y') - $birthyear;
 ?>
 <!DOCTYPE html>

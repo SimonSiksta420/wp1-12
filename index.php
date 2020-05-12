@@ -14,7 +14,7 @@
 <input type="text" name="lastname" id="">
 
 <label for="i-birthday"> Your birthday: </label>
-<input type="number" min="1900" max="2020" name="birthday">
+<input type="number" min="1900" max="2020" name="birthday" id="">
 
 
 
