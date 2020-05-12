@@ -13,9 +13,9 @@ $guessage = date('Y') - $birthyear;
 <body>
     <p> Formulář byl odeslán </p>
     <ul>
-      <li> Name: </li>
-      <li> Birthday: </li>
-      <li> Age </li>
+      <li> Name: <?= $firstname ?> </li>
+      <li> Birthday: <?= $birthyear ?> </li>
+      <li> Age: <?= $guessage ?> </li>
     </ul>
 </body>
 </html>
