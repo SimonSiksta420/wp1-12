@@ -28,8 +28,9 @@
 <textarea name="description" id="i-description" cols="30">
 Fill it out please
 </textarea>
-
+<br>
 <input type="submit" value="odeslat">
+<br>
 </form>
 
 </body>
